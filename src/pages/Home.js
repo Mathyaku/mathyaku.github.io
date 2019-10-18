@@ -23,7 +23,7 @@ export default function Home() {
                     <img src={instagram} alt="instagram"></img>
                 </a>
 
-                <a target="blank" href="https://www.linkedin.com/in/matheus-castro-4b21b9116/">
+                <a target="blank" href="https://www.linkedin.com/in/mathyaku/">
                     <img src={linkedin} alt="linkedin"></img>
                 </a>
 
