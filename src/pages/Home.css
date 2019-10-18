@@ -63,3 +63,12 @@
     cursor: pointer;
 }
 
+
+@media screen and (max-width: 1023px) {
+  
+  .home-container .first-letter {
+    font-size: 4.5rem;
+  }
+
+}
+
