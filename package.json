@@ -3,7 +3,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mathyaku.github.io/mathyaku.github.io",
+  "homepage": "http://mathyaku.github.io/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.10.2",
