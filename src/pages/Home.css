@@ -7,6 +7,15 @@
     height: 100%;
 }
 
+.home-container .disable-selection,
+.home-container .disable-selection > span{ 
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+} 
 
 .home-container .first-letter {
     font-size: 10rem;
@@ -65,7 +74,7 @@
 
 
 @media screen and (max-width: 1023px) {
-  
+
   .home-container .first-letter {
     font-size: 4.5rem;
   }

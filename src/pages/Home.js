@@ -10,7 +10,7 @@ import twitter from "../assets/twitter.png";
 export default function Home() {
     return (
         <div className="home-container">
-            <h1 className="first-letter">
+            <h1 className="first-letter disable-selection">
                 M<span className="others-letters">athyaku</span>
             </h1>
             <p className="job-position">I'm a Front-End Developer.</p>
