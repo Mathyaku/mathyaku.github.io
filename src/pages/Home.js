@@ -7,7 +7,21 @@ import instagram from "../assets/instagram.png";
 import linkedin from "../assets/linkedin.png";
 import twitter from "../assets/twitter.png";
 
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 export default function Home() {
+
+    useEffect(() => {
+        window.setTimeout(function(){
+            const elements = document.getElementsByClassName("others-letters");
+
+            if(elements.length)
+                elements[0].className += " start-animation";
+        }, 3250);
+    });
+
+
     return (
         <div className="home-container">
             <h1 className="first-letter disable-selection">
@@ -31,6 +45,10 @@ export default function Home() {
                     <img src={twitter} alt="twitter"></img>
                 </a>
             </footer>
+
+            <Link to="/Portfolio">
+                <button className="portfolio-button" type="buton"> Portfolio </button>
+            </Link>
         </div>
     );
 }

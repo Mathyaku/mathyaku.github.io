@@ -25,10 +25,10 @@
     display:none;
 }
 
-.home-container .first-letter:hover .others-letters {
+.home-container .first-letter .others-letters.start-animation {
     display: inline-flex;
-    opacity: 1;
-    animation: fade-in 2.5s;
+    animation-name: fade-in;
+    animation-duration: 2.5s;
 }
 
 @keyframes fade-in {
@@ -76,8 +76,24 @@
 @media screen and (max-width: 1023px) {
 
   .home-container .first-letter {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
 }
 
+
+.home-container .portfolio-button {
+  margin-top: 25px;
+  padding: 10px;
+  background: transparent;
+  color: #f0f0f0;
+  border: 1px solid #f0f0f0; 
+  text-decoration: none;
+  cursor: pointer
+}
+
+.home-container .portfolio-button:hover {
+  color: #222222;
+  border: 1px solid #222222; 
+  background: #f0f0f0 ;
+}
