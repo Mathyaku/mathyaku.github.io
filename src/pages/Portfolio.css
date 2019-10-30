@@ -1,9 +1,94 @@
 .portfolio-container {
     display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: auto;
     height: 100%;
+    max-width: 1020px;
+}
+
+.portfolio-container .header {
+    display: flex;
+    position: relative;
+}
+
+.portfolio-container .header .back-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+}
+
+.portfolio-container .header h2 {
+    margin: 0px auto;
+    padding-top: 50px;
+}
+
+.portfolio-container .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 50px;
+}
+
+.portfolio-container .projects article {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: fit-content;
+}
+
+.portfolio-container .projects article a {
+    display: flex;
+    color: white;
+}
+
+.portfolio-container .projects .project-color {
+    position: absolute;
+    background: rgba(0, 0, 255, 0.5);
+    height: 100%;
+    opacity: 1;
+    width: 100%;
+}
+
+.portfolio-container .projects .project-info {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    opacity: 0;
+}
+
+.portfolio-container .projects .project-info:hover {
+    opacity: 1;
+}
+
+.portfolio-container .projects .project-info label {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.portfolio-container .projects .project-info footer {
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+
+.portfolio-container .projects img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .portfolio-container .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  
 }
 
