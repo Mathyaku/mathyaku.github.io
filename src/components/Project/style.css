@@ -1,0 +1,59 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: fit-content;
+}
+
+.project-container a {
+    display: flex;
+    color: white;
+}
+
+.project-container .color {
+    position: absolute;
+    background: rgba(0, 0, 255, 0.5);
+    height: 100%;
+    opacity: 1;
+    width: 100%;
+}
+
+.project-container .project-info {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    padding: 5px 25px 25px 25px;
+    transition: padding .3s ease-out;
+}
+
+.project-container .project-info:hover {
+    opacity: 1;
+    padding-top: 25px;
+}
+
+.project-container .project-info label {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.project-container .project-info footer {
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+
+.project-container img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .project-container .project-info {
+        opacity: 1;
+        padding-top: 25px;
+    }
+  
+}

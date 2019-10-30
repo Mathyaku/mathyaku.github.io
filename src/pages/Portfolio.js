@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import Project from '../components/Project';
+
 import "./Portfolio.css";
 
 export default function Portfolio({history}) {
@@ -40,6 +42,23 @@ export default function Portfolio({history}) {
         history.push('/');
     }
 
+    const projects = [
+        {
+            githubUrl: "https://github.com/Mathyaku/tindev-app-react", 
+            imgUrl: "https://github.com/Mathyaku/tindev-app-react/blob/master/screenshots/main.PNG?raw=true", 
+            title: "tindev-app-react", 
+            description: "Tindev - Application to connect developers using Github API.",
+        },
+        {
+            githubUrl: "https://github.com/Mathyaku/instagram-app-react", 
+            imgUrl: "https://github.com/Mathyaku/instagram-app-react/blob/master/screenshots/feed-images.PNG?raw=true", 
+            title: "instagram-app-react", 
+            description: "Instagram made using React framework and NodeJS.", 
+        },
+    ]
+
+    
+
     return (
         <div className="portfolio-container">
 
@@ -56,40 +75,11 @@ export default function Portfolio({history}) {
 
             <div className="projects">
 
-                <article>
-                    <a href="https://github.com/Mathyaku/tindev-app-react">
-                        <img 
-                            src="https://github.com/Mathyaku/tindev-app-react/blob/master/screenshots/main.PNG?raw=true"
-                            alt="project"
-                        ></img>
-                        <div className="project-color" style={{background : getRandomColor() }}>
-                            <div className="project-info">
-                                <label>tindev-app-react</label>
-                                <footer>
-                                    Tindev - Application to connect developers using Github API.
-                                </footer>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article>
-                    <a href="https://github.com/Mathyaku/instagram-app-react">
-                        <img 
-                            src="https://github.com/Mathyaku/instagram-app-react/blob/master/screenshots/feed-images.PNG?raw=true"
-                            alt="project"
-                        ></img>
-                    
-                        <div className="project-color" style={{background : getRandomColor() }}>
-                            <div className="project-info">
-                                <label>instagram-app-react</label>
-                                <footer>
-                                    Instagram made using React framework and NodeJS.
-                                </footer>
-                            </div>
-                        </div>
-                    </a>
-                </article>
+                {
+                    projects.map( project => {
+                        return <Project {...project} rgbaColor={getRandomColor()} key={project.title} ></Project>
+                    })
+                }
 
             </div>
         </div>
