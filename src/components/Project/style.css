@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    height: fit-content;
+    height: 100%;
 }
 
 .project-container a {
     display: flex;
     color: white;
+    height: 100%;
 }
 
 .project-container .color {
@@ -26,6 +27,7 @@
     opacity: 0;
     padding: 5px 25px 25px 25px;
     transition: padding .3s ease-out;
+    color: #DCDCDC;
 }
 
 .project-container .project-info:hover {
@@ -47,6 +49,7 @@
 
 .project-container img {
     max-width: 100%;
+    border: 5px solid transparent;
 }
 
 @media screen and (max-width: 1023px) {

@@ -46,13 +46,13 @@ export default function Portfolio({history}) {
         {
             githubUrl: "https://github.com/Mathyaku/tindev-app-react", 
             imgUrl: "https://github.com/Mathyaku/tindev-app-react/blob/master/screenshots/main.PNG?raw=true", 
-            title: "tindev-app-react", 
+            title: "Tindev App React", 
             description: "Tindev - Application to connect developers using Github API.",
         },
         {
             githubUrl: "https://github.com/Mathyaku/instagram-app-react", 
             imgUrl: "https://github.com/Mathyaku/instagram-app-react/blob/master/screenshots/feed-images.PNG?raw=true", 
-            title: "instagram-app-react", 
+            title: "Instagram App React", 
             description: "Instagram made using React framework and NodeJS.", 
         },
     ]
