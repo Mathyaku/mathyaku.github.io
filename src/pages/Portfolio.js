@@ -44,6 +44,18 @@ export default function Portfolio({history}) {
 
     const projects = [
         {
+            githubUrl: "https://github.com/Mathyaku/pipefy-app-react", 
+            imgUrl: "https://github.com/Mathyaku/pipefy-app-react/blob/master/screenshots/Board.PNG?raw=true", 
+            title: "Pipefy App React", 
+            description: "Pipefy - Application to control your tasks using Drag and Drop functionality.",
+        },
+        {
+            githubUrl: "https://github.com/Mathyaku/aircnc-app-react", 
+            imgUrl: "https://github.com/Mathyaku/aircnc-app-react/blob/master/screenshots/My-Registered-Spots.PNG?raw=true", 
+            title: "Aircnc App React", 
+            description: "Aircnc - Application to register spots on your office to developers book based on their skills.",
+        },
+        {
             githubUrl: "https://github.com/Mathyaku/tindev-app-react", 
             imgUrl: "https://github.com/Mathyaku/tindev-app-react/blob/master/screenshots/main.PNG?raw=true", 
             title: "Tindev App React", 
