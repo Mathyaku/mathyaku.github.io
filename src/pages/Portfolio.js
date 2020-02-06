@@ -44,6 +44,12 @@ export default function Portfolio({history}) {
 
     const projects = [
         {
+            githubUrl: "https://github.com/Mathyaku/netflix-app-react", 
+            imgUrl: "https://github.com/Mathyaku/netflix-app-react/blob/master/screenshots/home.PNG?raw=true", 
+            title: "Netflix App React", 
+            description: "Netflix - Application to organize all the shows and movies you love.", 
+        },
+        {
             githubUrl: "https://github.com/Mathyaku/pipefy-app-react", 
             imgUrl: "https://github.com/Mathyaku/pipefy-app-react/blob/master/screenshots/Board.PNG?raw=true", 
             title: "Pipefy App React", 
@@ -65,7 +71,7 @@ export default function Portfolio({history}) {
             githubUrl: "https://github.com/Mathyaku/instagram-app-react", 
             imgUrl: "https://github.com/Mathyaku/instagram-app-react/blob/master/screenshots/feed-images.PNG?raw=true", 
             title: "Instagram App React", 
-            description: "Instagram made using React framework and NodeJS.", 
+            description: "Instagram - Application made using React framework and NodeJS.", 
         },
     ]
 
