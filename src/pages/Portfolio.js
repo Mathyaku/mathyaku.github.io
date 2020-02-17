@@ -44,6 +44,12 @@ export default function Portfolio({history}) {
 
     const projects = [
         {
+            githubUrl: "https://github.com/Mathyaku/devradar-app-react", 
+            imgUrl: "https://github.com/Mathyaku/devradar-app-react/blob/master/screenshots/devradar.png?raw=true", 
+            title: "DevRadar App React", 
+            description: "DevRadar - Application to find developers by technologies using Github API and Geolocation.", 
+        },
+        {
             githubUrl: "https://github.com/Mathyaku/netflix-app-react", 
             imgUrl: "https://github.com/Mathyaku/netflix-app-react/blob/master/screenshots/home.PNG?raw=true", 
             title: "Netflix App React", 
@@ -58,13 +64,13 @@ export default function Portfolio({history}) {
         {
             githubUrl: "https://github.com/Mathyaku/aircnc-app-react", 
             imgUrl: "https://github.com/Mathyaku/aircnc-app-react/blob/master/screenshots/My-Registered-Spots.PNG?raw=true", 
-            title: "Aircnc App React", 
+            title: "AirCnC App React", 
             description: "Aircnc - Application to register spots on your office to developers book based on their skills.",
         },
         {
             githubUrl: "https://github.com/Mathyaku/tindev-app-react", 
             imgUrl: "https://github.com/Mathyaku/tindev-app-react/blob/master/screenshots/main.PNG?raw=true", 
-            title: "Tindev App React", 
+            title: "TinDev App React", 
             description: "Tindev - Application to connect developers using Github API.",
         },
         {
